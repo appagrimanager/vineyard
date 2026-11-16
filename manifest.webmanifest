@@ -1,0 +1,16 @@
+{
+ "name": "Vineyard Manager",
+ "short_name": "Vineyard",
+ "start_url": "./index.html",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#f4f7f4",
+ "theme_color": "#176b43",
+ "icons": [
+  {
+   "src": "apple-touch-icon.png",
+   "sizes": "180x180",
+   "type": "image/png"
+  }
+ ]
+}
