@@ -1,4 +1,4 @@
-const CACHE="vineyard-manager-stock-v81";
+const CACHE="vineyard-manager-stock-v82";
 const ASSETS=["./","./index.html","./manifest.webmanifest","./apple-touch-icon.png"];
 // install: always fetch fresh copies (bypass the browser HTTP cache) so a new version never stores a stale index.html
 self.addEventListener("install",event=>event.waitUntil(caches.open(CACHE).then(cache=>Promise.all(ASSETS.map(u=>fetch(new Request(u,{cache:"reload"})).then(r=>{if(r&&r.ok)return cache.put(u,r)}).catch(()=>{})))).then(()=>self.skipWaiting())));
